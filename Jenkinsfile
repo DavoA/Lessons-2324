@@ -23,6 +23,16 @@ pipeline {
                         }
                     }
                 }
+                stage('Test On MacOS') {
+                    steps {
+                        echo "on Mac"
+                    }
+                    post {
+                        always {
+                            echo "post"
+                        }
+                    }
+                }
             }
         }
     }

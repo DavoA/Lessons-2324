@@ -1,0 +1,9 @@
+name: My_Pipeline
+on: push
+jobs:
+  my_first_job:
+    runs-on:
+      ubuntu-latest
+    steps:
+      - name: gugush
+        run: echo Hello World

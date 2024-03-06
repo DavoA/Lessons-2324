@@ -13,16 +13,6 @@ pipeline {
                         }
                     }
                 }
-                stage('Test On Linux') {
-                    steps {
-                        echo "on linux"
-                    }
-                    post {
-                        always {
-                            echo "post"
-                        }
-                    }
-                }
             }
         }
     }
